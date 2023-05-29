@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.calculadora{
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px ridge #5f5b5b8f;
+    border-radius: 5px;
+    text-align: center;
+    background: #ede9e9;
+}
+input{
+    width: 100%;
+    margin: -5px;
+    background: #07c107;
+    opacity: 0.7;
+    color: white;
+    font-size: 20px;
+}
+
+.teclas{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+button{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}

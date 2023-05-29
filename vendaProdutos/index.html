@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdutosCompra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div class="vendaProdutos">
+            <div class="slogan">
+                <h1>Variedades e Preço baixo é aqui</h1>
+            </div>
+            <div class="container d-flex">
+                <div class="produtos">
+                    <div class="card" style="width:16rem;padding: 5px;">
+                       <img src="img/caixaMisterio.jpeg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Caixa Misteriosa</h5>
+                        <p class="card-text">Promoção Relâmpago pela Metade Do Preço + Frete Grátis apenas <b>R$250,00</b></p>
+                        <div class="valoresProduto d-flex">
+                            <label for="quantidade">Quantidade:</label>
+                            <button id="botaoSoma" class="botaoQtd">+</button>
+                            <input onclick="atualizarQuantidade(event)" type="text" class="quantidadeProduto botaoQtd" name="quantidade" id="quantidade" value="0">
+                            <button id="botaoMenos" class="botaoQtd">-</button>
+                            <span>R$</span>
+                            <span id="valorTotal">10</span>            
+                          </div>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
