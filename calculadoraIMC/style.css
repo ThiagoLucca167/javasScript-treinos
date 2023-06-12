@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: aliceblue;
+}
+.container{ 
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+}
+.calculadora{
+    height: auto;
+    border: 2px solid;
+    border-radius: 12px;
+    margin-top: 50%;
+    padding: 10px;
+    background: #d5d5d58c;
+}
+.formulario{
+    text-align: start;
+}
+.caixaForm{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#resultado{
+    color: yellow;
+    background: black;
+    text-shadow: 0px 0px 5px rgb(255 255 255);
+    padding:8px;
+}
