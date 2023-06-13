@@ -1,5 +1,5 @@
 var calcular = document.getElementById('calcular');
-
+var limpar = document.getElementById('limpar');
 
 function calcImc(){
     const nome = document.getElementById('nome').value;
@@ -33,4 +33,15 @@ function calcImc(){
             document.getElementById('resultado').style.color = 'red';
         }
 }
+
+function limpeza(){
+    document.getElementById('resultado').textContent = 'Resultado Aqui'
+    document.getElementById('resultado').style.color ="yellow"; 
+    document.getElementById('resultado').style.background ="black"; 
+    document.getElementById('nome').value = '';
+    document.getElementById('altura').value = '';
+    document.getElementById('peso').value = '';
+}
+
 calcular.addEventListener('click',calcImc)
+limpar.addEventListener('click', limpeza)
