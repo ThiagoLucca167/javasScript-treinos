@@ -8,10 +8,8 @@ function calcImc(){
     const resultado = document.getElementById('resultado')
 
     if(nome !==''&& altura !== '' && peso !== ''){
-        document.getElementById('resultado').style.color ="yellow"; 
-        document.getElementById('resultado').style.background ="black"; 
-
         const imc = (peso / (altura * altura)).toFixed(1);
+        document.getElementById('resultado').style.color ="#FFFF00";
         let classificacao = 'Indefinido';
         
         if(imc < 18.5){
@@ -35,9 +33,8 @@ function calcImc(){
 }
 
 function limpeza(){
-    document.getElementById('resultado').textContent = 'Resultado Aqui'
-    document.getElementById('resultado').style.color ="yellow"; 
-    document.getElementById('resultado').style.background ="black"; 
+    document.getElementById('resultado').textContent = ''
+    document.getElementById('resultado').style.color ="#FFFF00";  
     document.getElementById('nome').value = '';
     document.getElementById('altura').value = '';
     document.getElementById('peso').value = '';

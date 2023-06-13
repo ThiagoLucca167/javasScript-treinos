@@ -1,40 +1,77 @@
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Arvo-Regular.ttf);
+}
+@font-face {
+    font-family: formulario;
+    src: url(../fonts/Arvo-Italic.ttf);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background: aliceblue;
+    background: #001c34;
 }
 .container{ 
     text-align: center;
-    width: 350px;
-    height: 300px;
-    position: relative;
+    width: 500px;
     margin: auto;
 }
 .calculadora{
+    background: #ffffff2b;
+    border-radius: 20px;
     height: auto;
-    border: 2px solid;
-    border-radius: 12px;
-    margin-top: 50%;
+    margin-top: 10%;
     padding: 10px;
-    background: #d5d5d58c;
+}
+.titulo{
+    font-family:titulo;
+    margin-bottom: 10%;
 }
 .formulario{
-    text-align: start;
+    justify-content: initial;
+    display: grid;
+    justify-items: center;
 }
 .caixaForm{
     width: 100%;
-    height: auto;
-    padding: 5px;
-    margin: 5px;
+    margin: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+label{
+    font-family: formulario;
+    font-size: 30px;
+}
+.inputInformacoes{
+    width: 70%;
+    box-shadow: 0px 0px 3px 0px rgb(255 255 255);
+    border: none;
+    border-radius: 5px;
+}
+.blocoResultado{
+    width: 70%;
+    text-align: center;
+}
+.botoes{
+    justify-content: space-evenly!important;
+}
+.botao{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: #fbfbfb;
+    font-weight: bold;
+    font-family: formulario;
+}
+.formResultado{
+    justify-content: center;
 }
 #resultado{
-    color: yellow;
-    background: black;
-    text-shadow: 0px 0px 5px rgb(255 255 255);
-    padding:8px;
+    font-family: titulo;
+    color: #FFFF00;
 }
