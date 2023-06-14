@@ -1,77 +1,73 @@
 @font-face {
-    font-family: titulo;
+    font-family: 'titulo';
     src: url(../fonts/Arvo-Regular.ttf);
 }
-@font-face {
-    font-family: formulario;
-    src: url(../fonts/Arvo-Italic.ttf);
-}
-
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 body{
-    background: #001c34;
+    background: rgb(239, 236, 236);
+    padding: 15px;
 }
-.container{ 
-    text-align: center;
-    width: 500px;
+.container{
+    position: relative;
+    width: 600px;
     margin: auto;
+    display: flex;
 }
 .calculadora{
-    background: #ffffff2b;
-    border-radius: 20px;
-    height: auto;
-    margin-top: 10%;
+    display: table-column;
     padding: 10px;
-}
-.titulo{
-    font-family:titulo;
-    margin-bottom: 10%;
-}
-.formulario{
-    justify-content: initial;
-    display: grid;
-    justify-items: center;
-}
-.caixaForm{
-    width: 100%;
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-}
-label{
-    font-family: formulario;
-    font-size: 30px;
-}
-.inputInformacoes{
-    width: 70%;
-    box-shadow: 0px 0px 3px 0px rgb(255 255 255);
-    border: none;
-    border-radius: 5px;
-}
-.blocoResultado{
-    width: 70%;
     text-align: center;
 }
+#titulo{
+    margin: 35px 0px;
+    font-family: 'titulo';
+    text-align: center;
+    font-size: 26px;
+}
+.formulario{
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgb(129 129 129);
+}
+.caixaForm{
+    margin: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+label{
+    font-family: 'titulo';
+    font-size: 28px;
+}
 .botoes{
-    justify-content: space-evenly!important;
+    justify-content: space-around;
 }
-.botao{
+.botoes input{
     width: 100px;
-    border: none;
-    border-radius: 5px;
-    padding: 3px;
-    background: #fbfbfb;
-    font-weight: bold;
-    font-family: formulario;
+    padding: 10px;
+    font-family: 'titulo';
+    font-weight: 700;
+    font-size: 19px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
-.formResultado{
-    justify-content: center;
+.inputInformacoes{
+    width: 80%;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 5px 1px rgb(139 138 138);
+    border-radius: 10px;
 }
 #resultado{
-    font-family: titulo;
-    color: #FFFF00;
+    font-size: 25px;
+    font-family: 'titulo';
+}
+.caixaCanvas{
+    justify-content: center!important;
+}
+#chart{
+    display: none;
+    height: auto!important;
+    width: 300px!important;
 }
