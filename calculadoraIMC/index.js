@@ -28,12 +28,13 @@ function imc() {
         let corVerde = 'green';
         let corVermelha = 'red';
         let corLaranja = 'orange';
+        let corAzul = 'blue';
         let cor;
 
         if (calcIMC < 18.5) {
             classificacao = 'Abaixo do Peso';
-            classificacaoImc = 'não saudavel';
-            cor = corVermelha;
+            classificacaoImc = 'Magreza';
+            cor = corAzul;
         } else if (calcIMC < 24.9) {
             classificacao = 'Peso Normal';
             classificacaoImc = 'saudavel';
@@ -69,7 +70,7 @@ function imc() {
                 datasets: [{
                     label: "IMC",
                     backgroundColor: [cor],
-                    borderColor: 'rgba(255, 99, 132)',
+                    borderColor: cor,
                     data: [calcIMC]
                 }]
             },

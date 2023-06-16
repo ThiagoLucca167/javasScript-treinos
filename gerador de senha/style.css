@@ -1,0 +1,114 @@
+@font-face {
+    font-family:'conteudo' ;
+    src: url(../fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'conteudo';
+}
+body{
+    background: whitesmoke;
+    padding: 15px;
+    display: flex;
+}
+.container{
+    width: 400px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    padding-left: 20px;
+    background: white;
+    box-shadow: 2px 2px 5px 2px rgb(169 166 166);
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    
+}
+.formatacaoTitulo{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.imagem-titulo{
+    margin-left: 9px;
+    position: relative;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    background-image: url(chaveTitulo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+.formatacao{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0px;
+}
+label{
+    text-shadow: 0 0 black;
+}
+.geradorSenha .formatacao input{
+    width: 20px;
+}
+#quantidade{
+    width: 35px;
+    text-align: center;
+}
+.botoescentro{
+    width: 100%;
+    justify-content: space-around;
+}
+.botoescentro input{
+    padding: 6px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+}
+#gerarSenha{
+    width: 140px;
+    background: #118b16;
+    background-image: url(senha.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+#gerarSenha:hover{
+    box-shadow: 1px 1px 5px 1px rgb(26 157 35);
+}
+#copiar{
+    width: 100px;
+    background: #11418b;
+    background-image: url(copiar-escrita.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+#copiar:hover{
+    box-shadow: 1px 1px 5px 1px rgb(26 92 157);
+}
+.resultadoInput{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: 30px 0px;
+}
+#resultado{
+    width: 290px;
+    height: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px dashed #747070;
+    border-radius: 11px;
+    padding: 20px 10px 0px 10px;
+    margin: 7px 0 0 0;
+}
